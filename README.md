@@ -9,7 +9,7 @@ Two common data structures for implementing First-In-First-Out (FIFO) queues are
 
 When using an array for a circular buffer, we must make sure that the array is big enough to hold the largest number of items that can be in the FIFO queue simultaneously. Suppose we added two more values 22 and 23 to the circular buffer above. Then, the buffer would be full.  
 
-![Slide 2](https://github.com/Heyeso/Circular-Linked-List/tree/main/images/slide2.jpg)
+![Slide 2](images/slide2.jpg)
 
 We cannot add another item to the circular buffer. What do we do? The standard trick when we run out of space in an array is to make a new array that holds twice as much data and copy the data over, freeing the old array afterwards. Copying is slow, though. So, instead of copying, we will just add another array for new values, and keep both arrays. The following diagram shows what happens if we add 24, 25, 26, 27, 28 and 29 to the example above.
 
